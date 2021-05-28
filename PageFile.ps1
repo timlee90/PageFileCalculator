@@ -24,7 +24,7 @@ $choices.Add((New-Object Management.Automation.Host.ChoiceDescription -ArgumentL
 $decision = $Host.UI.PromptForChoice($message, $question, $choices, 1)
 if ($decision -eq 0)
 {
-    & "PSScriptRoot/pagefile.ps1"
+    & "$PSScriptRoot/pagefile.ps1"
 }
 else
 {
